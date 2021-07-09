@@ -3,6 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- init: base on version 1.8.2-->
     <groupId>com.alibaba.csp</groupId>
     <artifactId>sentinel-parent</artifactId>
     <version>1.8.2</version>
