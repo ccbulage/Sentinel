@@ -16,6 +16,7 @@
 package com.alibaba.csp.sentinel.demo.dubbo.demo1;
 
 import java.util.Collections;
+import java.util.concurrent.TimeUnit;
 
 import com.alibaba.csp.sentinel.init.InitExecutor;
 import com.alibaba.csp.sentinel.slots.block.RuleConstant;
@@ -50,6 +51,12 @@ public class FooProviderBootstrap {
         context.refresh();
 
         System.out.println("Service provider is ready");
+        try {
+            TimeUnit.MINUTES.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+        }
     }
 
     private static void initFlowRule() {
